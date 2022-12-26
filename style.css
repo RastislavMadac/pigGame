@@ -45,6 +45,54 @@ main {
   transition: all 0.75s;
 }
 
+/* Modal window */
+.modal-window {
+  position: absolute;
+  width: 61rem;
+  z-index: 3;
+  left: 20rem;
+  top: 14rem;
+  background-color: #f3e9ec;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 3rem;
+}
+.modal-window h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+.modal-window p {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+.close-modal {
+  cursor: pointer;
+  position: absolute;
+  left: 54rem;
+  top: 1rem;
+  font-size: 4rem;
+  border-radius: 1rem;
+  padding: 0 1rem 0.4rem 1rem;
+}
+
+/* Name of players */
+.name-of-players-window {
+  position: absolute;
+  width: 61rem;
+  height: 20rem;
+  z-index: 3;
+  left: 20rem;
+  top: 14rem;
+  background-color: #f3e9ec;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 3rem;
+}
+.names-players {
+  display: grid;
+  grid-template-columns: auto;
+}
+
 /* ELEMENTS */
 .name {
   position: relative;
@@ -130,13 +178,21 @@ main {
 }
 
 .btn--new {
-  top: 4rem;
+  top: 1rem;
 }
 .btn--roll {
   top: 39.3rem;
 }
 .btn--hold {
   top: 46.1rem;
+}
+.btn--palyer {
+  top: 1rem;
+  left: 22rem;
+}
+.btn--rules {
+  top: 1rem;
+  left: 76rem;
 }
 
 .btn:active {
@@ -168,4 +224,14 @@ main {
 
 .hidden {
   display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
 }
